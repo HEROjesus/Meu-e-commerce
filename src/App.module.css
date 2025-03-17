@@ -1,0 +1,65 @@
+.cadastro {
+  color: #fff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 300;
+  font-size: 14px; /* Tamanho padrão para telas menores */
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.cadastro strong {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container {
+  background-color: #000;
+  display: flex;
+  justify-content: center; /* Melhor alinhamento para telas pequenas */
+  padding: 0.5rem;
+  align-items: center;
+}
+
+/* Responsividade para celulares pequenos */
+@media (min-width: 320px) {
+  .cadastro {
+    font-size: 5px;
+  }
+}
+
+/* Responsividade para celulares  */
+@media (min-width: 375px) {
+  .cadastro {
+    font-size: 7px;
+  }
+}
+@media (max-width: 375px) {
+  .close {
+    display: none;
+  }
+}
+/* Responsividade para tablets */
+@media (min-width: 425px) {
+  .cadastro {
+    font-size: 0.5rem;
+  }
+}
+
+/* Responsividade para telas maiores (laptops, desktops) */
+@media (min-width: 768px) {
+  .cadastro {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cadastro {
+    font-size: 1rem;
+  }
+}
