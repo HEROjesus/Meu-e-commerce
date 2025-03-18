@@ -1,0 +1,22 @@
+.input  {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #F2F0F1;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    color: #333;
+    border: gray 1px solid ;
+}
+
+.input:hover{
+    border: #6366f1 1px solid;
+}
+
+
+.input:focus {
+    border-color: #6366f1; /* Um azul suave */
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.5);
+}

@@ -1,0 +1,59 @@
+.container {
+  background-image: url(../../../assets/backgroundAuth.svg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Corrigido para cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem de fundo */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; /* Adiciona responsividade */
+  margin: 0 auto;
+  padding: 1rem; /* Evita que os elementos encostem na borda da tela */
+  min-height: 100vh; /* Garante que a tela seja preenchida */
+}
+
+.container h1 {
+  color: #f2f0f1;
+  padding: 1rem 0;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+  background-color: #F7F5F2;
+  min-height: 20rem; /* Evita altura fixa */
+  width: 90%; /* Ocupa 90% da tela */
+  max-width: 600px; /* Limita para não ficar gigante em telas grandes */
+  border-radius: 2rem;
+  padding: 2rem; /* Evita que o conteúdo encoste nas bordas */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .forms {
+    width: 100%; /* Ocupa a tela toda em celulares */
+    min-height: 15rem; /* Reduz altura para caber melhor */
+  }
+}
+
+.Button{
+  margin: 1rem;
+  background-color: black;
+  width: 75%;
+  color: #f2f0f1;
+  border-radius: 1pc;
+  height: 45px;
+  font-size:medium;
+  font-weight: 600;
+  border: transparent;
+  cursor: pointer;
+}
+
+.Button::content{
+  clip: auto;
+}
+
